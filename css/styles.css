@@ -1,3 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+/*HTML TAGS*/
+
 body{
     background-color:#d5e1ef;
     font-family:'Outfit', sans-serif;
@@ -5,24 +13,11 @@ body{
 
 
 img{
-    position:absolute;
-    padding:0 1.5rem 0 1.5rem;
-    margin:auto;
-   height:20rem;
-   width:20rem;
-   float:left;
-   border-radius:15%;
+    width: inherit;
+    border-radius: 1.5rem;
+    padding: .75rem;
 }
-h1{
-    float:right;
-    margin-top:330px;
-    margin:330px auto 0;
-    text-align: center;
-    font-weight:700;
-    font-size:25px;
-    padding:0 30px;
-    color:hsl(218, 44%, 22%);
-}
+
 p{
     display:inline-block;
     text-align: center;
@@ -31,26 +26,39 @@ p{
     padding:0 30px;
     color:hsl(220, 15%, 55%);
 }
-
-.ad{
-    margin:100px 0 0 0;
+/*Classes*/
+.main-container{
+    background-color: hsl(212, 45%, 89%);
+    justify-content: center;
+    position:relative;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
 }
+.container{
+    width: 18rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.header{
+    font-size:1.25rem;
+    font-weight:bolder;
+    color:hsl(218, 44%, 22%);
+}
+
+.body-text{
+    font-size:1rem;
+    padding:1rem 1rem 2rem 1rem;
+}
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-.main-box{
-    background-color:#ffffff;
-    height:30.6875rem;
-    width:23.43rem;
-    margin: 100px auto;
-    padding: 10px 0;
-    position:relative;
-    border-radius:5%;
-}
-
-.text{
-    display:inline-block;
-}
+/*IDs*/
